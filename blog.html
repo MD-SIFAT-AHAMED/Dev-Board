@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>blog</title>
+</head>
+<body  class="bg-gray-300 p-2">
+    <!-- Header section -->
+    <header class="max-w-screen-xl p-4 mb-3 mx-auto rounded-xl bg-white">
+        <nav class="flex justify-between">
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="">
+                <p class="text-2xl">Dev<spann class="font-bold">Board</spann></p>
+            </div>
+            <div class="flex items-center gap-3">
+                <button id="back-btn" class="task-btn px-4 py-3 text-lg text-white rounded-lg cursor-pointer bg-[#3752FD] ">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Question section -->
+    <section class="max-w-screen-xl mx-auto">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-sm">Different ways to select in the dom is For single elements: Use getElementById() or querySelector() and multiple elements: Use getElementsByClassName(), getElementsByTagName(), or querySelectorAll().</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-content text-sm">difference between innerHTML, innerText, and textContent is innerHTML Use when you need to manipulate HTML content inside an element And innerText Use when you need the visible text, considering styles and layout And innerContent Use for retrieving or modifying raw text, with no layout or styling considerations.</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">Event delegation allows you to handle events on a parent element rather than on individual child elements.It works by utilizing event bubbling, which lets the event bubble up from the target element to the parent element.</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-sm"> where an event that is triggered on a specific element bubbles up from the target element to its ancestors in the DOM tree. This means that when an event like a click, keydown, etc.</div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-sm">const Element = document.createElement('div'); <br>
+                const parent = document.getElementById('parent'); <br>
+                parent.appendChild(Element); <br>
+                newElement.remove();
+            </div>
+          </div>
+    </section>
+
+    <script src="script/blogscript.js"></script>
+</body>
+</html>
